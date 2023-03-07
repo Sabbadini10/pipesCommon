@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DarkModeService } from './services/dark-mode.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipesApp';
+ constructor(private darkModeService: DarkModeService){ }
+
+ get dark(){
+  return this.darkModeService.dark
+ }
+
 }
