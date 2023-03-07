@@ -6,10 +6,12 @@ import { CustomPipesModule } from './components/custom-pipes/custom-pipes.module
 import { PipesCommonModule } from './components/pipes-common/pipes-common.module';
 import { DarkModePipes } from './shared/pipes/dark-mode.pipe';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    DarkModePipes
+    DarkModePipes,
+
   ],
   imports: [
     BrowserModule,

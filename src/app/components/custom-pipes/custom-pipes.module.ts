@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CustomContainerComponent } from './custom-container/custom-container.component';
+import { TemperaturePipe } from 'src/app/shared/pipes/temperature.pipe';
 
 
 
@@ -8,7 +9,7 @@ import { CustomContainerComponent } from './custom-container/custom-container.co
 
 
 @NgModule({
-  declarations: [CustomContainerComponent],
+  declarations: [CustomContainerComponent, TemperaturePipe],
   imports: [CommonModule],
   exports: [CustomContainerComponent]
 })
